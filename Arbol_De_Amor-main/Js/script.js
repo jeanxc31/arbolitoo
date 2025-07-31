@@ -209,16 +209,16 @@ function playBackgroundMusic() {
   if (!btn) {
     btn = document.createElement('button');
     btn.id = 'music-btn';
-    btn.textContent = '🔊 Música';
+    btn.textContent = '🔊 Bulla';
     btn.style.position = 'fixed';
-    btn.style.bottom = '18px';
-    btn.style.right = '18px';
+    btn.style.bottom = '16px';
+    btn.style.right = '16px';
     btn.style.zIndex = 99;
     btn.style.background = 'rgba(255,255,255,0.85)';
     btn.style.border = 'none';
-    btn.style.borderRadius = '24px';
+    btn.style.borderRadius = '20px';
     btn.style.padding = '10px 18px';
-    btn.style.fontSize = '1.1em';
+    btn.style.fontSize = '0.78em';
     btn.style.cursor = 'pointer';
     document.body.appendChild(btn);
   }
