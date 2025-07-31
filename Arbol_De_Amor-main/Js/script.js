@@ -70,7 +70,7 @@ function getURLParam(name) {
 function showDedicationText() { //seguidores
   let text = getURLParam('text');
   if (!text) {
-    text = `Holi pa' usted🌸\n\nAquí nada de tutearse, Nani de verdad escribo esto con todo el amor del mundo, quiero que mis ganas se vean reflejadas en pequeños detalles que perduren en el tiempo.\n\nY a la vez agradecerte por el mismo, porque sí, el tiempo es lo que más valoro, también a tu buen trato, a tu ganas de querer hacer las cosas diferentes y a siempre expresar tu amor con cada beso y caricia.\n\nEsta pequeña carta es para recordarle que de verdad veo y siento la necesidad de decir que quiero que sigas aportando toda la seriedad del caso en esta etapa de conocernos tal cuál somos: virtudes, defectos, que tanto pecamos, etc. etc.\n\nVida mía nunca sueltes mi mano, tampoco olvides lo que nos está costando y que aún falta un mundo por descubrir, veo en tu mirada que tienes todas las intenciones de que esto vaya muy enserio y quiero confiar en ti más que el dia de ayer.\n\nEs la primera vez que te escribo algo bonito y creí conveniente hacerlo utilizando herramientas que he manejado muchos años de mi vida, de igual manera, nunca habrán palabras suficientes para expresar ese gran sentimiento hacia usted`;  } else {
+    text = `Holi pa' usted🌸\n\nAquí nada de tutearse, Nani de verdad escribo esto con todo el amor del mundo, quiero que mis ganas se vean reflejadas en pequeños detalles que perduren en el tiempo.\n\nY a la vez agradecerte por el mismo, porque sí, el tiempo es lo que más valoro, también a tu buen trato, a tu ganas de querer hacer las cosas diferentes y a siempre expresar tu amor con cada beso y caricia.\n\nEsta pequeña carta es para recordarle que de verdad veo y siento la necesidad de decir que quiero que sigas aportando toda la seriedad del caso en esta etapa de conocernos tal cuál somos: virtudes, defectos, que tanto pecamos, etc. etc.\n\nVida mía nunca sueltes mi mano, tampoco olvides lo que nos está costando y que aún falta un mundo por descubrir, veo en tu mirada que tienes todas las intenciones de que esto vaya muy enserio y quiero confiar en ti más que el dia de ayer.\n\nEs la primera vez que te escribo algo bonito y creí conveniente hacerlo utilizando herramientas que he manejado muchos años de mi vida, de igual manera, nunca habrán palabras suficientes para expresar ese gran sentimiento hacia usted.`;  } else {
     text = decodeURIComponent(text).replace(/\\n/g, '\n');
   }
   const container = document.getElementById('dedication-text');
@@ -226,18 +226,18 @@ function playBackgroundMusic() {
   audio.loop = true;
   // Intentar reproducir inmediatamente
   audio.play().then(() => {
-    btn.textContent = '🔊 Música';
+    btn.textContent = '🔊 Bulla';
   }).catch(() => {
     // Si falla el autoplay, esperar click en el botón
-    btn.textContent = '▶️ Música';
+    btn.textContent = '▶️ Bulla';
   });
   btn.onclick = () => {
     if (audio.paused) {
       audio.play();
-      btn.textContent = '🔊 Música';
+      btn.textContent = '🔊 Bulla';
     } else {
       audio.pause();
-      btn.textContent = '🔈 Música';
+      btn.textContent = '🔈 Bulla';
     }
   };
 }
